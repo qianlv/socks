@@ -1,0 +1,16 @@
+[package]
+name = "socks"
+version = "0.1.0"
+authors = ["qianlv7 <qianlv7@qq.com>"]
+edition = "2018"
+
+[[bin]]
+name = "socks"
+path = "src/main.rs"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+byteorder = "1.4.2"
+bytes = "1"
+mio = { version = "0.7.7", features = ["os-poll", "net"]}
